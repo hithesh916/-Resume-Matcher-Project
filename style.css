@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #2e0059);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.glass {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.upload-section {
+    margin: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input[type="file"], button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8a2be2;
+}
+
+.results {
+    display: none;
+    margin-top: 20px;
+}
+
+.keywords span {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.keywords span.match {
+    background: rgba(0, 255, 0, 0.2);
+}
+
+.keywords span.missing {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}

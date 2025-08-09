@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Matcher - Hithesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="your-logo.png" alt="Logo" class="logo">
+        <h1>Resume Matcher</h1>
+        <p>Match your resume to any job description instantly</p>
+    </header>
+
+    <main class="glass">
+        <div class="upload-section">
+            <label>Upload Your Resume:</label>
+            <input type="file" id="resumeFile" accept=".pdf,.docx,.txt">
+        </div>
+
+        <div class="upload-section">
+            <label>Paste Job Description:</label>
+            <textarea id="jobDescription" placeholder="Paste job description here..."></textarea>
+        </div>
+
+        <button id="matchBtn">Match Resume</button>
+
+        <div id="results" class="results">
+            <h2>Match Results</h2>
+            <p id="score"></p>
+
+            <h3>✅ Matched Keywords</h3>
+            <div id="matchedKeywords" class="keywords"></div>
+
+            <h3>❌ Missing Keywords</h3>
+            <div id="missingKeywords" class="keywords"></div>
+
+            <button id="downloadBtn">Download as PDF</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>🚀 Built by <strong>Hithesh</strong></p>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
