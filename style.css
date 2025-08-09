@@ -12,9 +12,23 @@ header {
 }
 
 .logo {
-    width: 80px;
+    width: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
+    animation: glowPulse 2s infinite;
+    box-shadow: 0 0 15px #8a2be2, 0 0 30px #6a0dad, 0 0 45px #b19cd9;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 10px #8a2be2, 0 0 20px #6a0dad, 0 0 30px #b19cd9;
+    }
+    50% {
+        box-shadow: 0 0 25px #8a2be2, 0 0 40px #6a0dad, 0 0 60px #b19cd9;
+    }
+    100% {
+        box-shadow: 0 0 10px #8a2be2, 0 0 20px #6a0dad, 0 0 30px #b19cd9;
+    }
 }
 
 .glass {
